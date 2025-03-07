@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{17D47D2B-F0EB-48C2-8611-6A4DE56F38FA}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Exercicio4.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\..\..\..\Documentos\Embarcadero\Studio\Projects\Exercicio5.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Exercicio4">
+        <MSBuild Projects="Exercicio4.dproj"/>
+    </Target>
+    <Target Name="Exercicio4:Clean">
+        <MSBuild Projects="Exercicio4.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Exercicio4:Make">
+        <MSBuild Projects="Exercicio4.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Exercicio5">
+        <MSBuild Projects="..\..\..\..\..\Documentos\Embarcadero\Studio\Projects\Exercicio5.dproj"/>
+    </Target>
+    <Target Name="Exercicio5:Clean">
+        <MSBuild Projects="..\..\..\..\..\Documentos\Embarcadero\Studio\Projects\Exercicio5.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Exercicio5:Make">
+        <MSBuild Projects="..\..\..\..\..\Documentos\Embarcadero\Studio\Projects\Exercicio5.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Exercicio4;Exercicio5"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Exercicio4:Clean;Exercicio5:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Exercicio4:Make;Exercicio5:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
