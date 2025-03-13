@@ -1,0 +1,19 @@
+program Exercicio3;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+Var
+Nome1 : string;
+ Idade1 : Integer;
+
+
+begin
+   Writeln(Format('Informe a idade do jogador:');
+   Readln (Idade1);
+
+end.
