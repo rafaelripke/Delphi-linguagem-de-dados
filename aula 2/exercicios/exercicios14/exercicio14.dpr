@@ -25,7 +25,7 @@ begin
     ReadLn(opcao);
 
     case opcao of
-      1: begin // Cadastro de produto
+      1: begin
         if TotalProdutos < 100 then
         begin
           Write('Digite o código do produto: ');
@@ -51,7 +51,7 @@ begin
           WriteLn('Limite de produtos atingido!');
       end;
 
-      2: begin // Listar produtos
+      2: begin
         if TotalProdutos = 0 then
           WriteLn('Nenhum produto cadastrado!')
         else
@@ -62,7 +62,7 @@ begin
         end;
       end;
 
-      3: begin // Pesquisar produto pelo código
+      3: begin
         Write('Digite o código do produto: ');
         ReadLn(codigoBusca);
         encontrado := False;
@@ -77,7 +77,7 @@ begin
           WriteLn('Produto não encontrado!');
       end;
 
-      4: begin // Excluir produto
+      4: begin
         Write('Digite o código do produto a ser excluído: ');
         ReadLn(codigoBusca);
         encontrado := False;
