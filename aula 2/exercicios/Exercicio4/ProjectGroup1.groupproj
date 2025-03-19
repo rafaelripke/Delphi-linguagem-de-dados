@@ -3,15 +3,6 @@
         <ProjectGuid>{6A16C669-7F49-459E-B08A-707132A309E0}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
-        <Projects Include="..\Exercicio3\Exercicio3.dproj">
-            <Dependencies/>
-        </Projects>
-        <Projects Include="..\Exercicio2\Exercicio2.dproj">
-            <Dependencies/>
-        </Projects>
-        <Projects Include="..\Exercicio1\Exercicio1.dproj">
-            <Dependencies/>
-        </Projects>
         <Projects Include="..\exercicio5\exercicio5.dproj">
             <Dependencies/>
         </Projects>
@@ -30,6 +21,21 @@
         <Projects Include="..\exercicio10\exercicio10.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="..\exercicio11\exercicio11.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="exercicio3.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\exercicio12\exercicio12.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\exercicio13\exercicio13.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\exercicios14\exercicio14.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -38,33 +44,6 @@
             <Default.Personality/>
         </BorlandProject>
     </ProjectExtensions>
-    <Target Name="Exercicio3">
-        <MSBuild Projects="..\Exercicio3\Exercicio3.dproj"/>
-    </Target>
-    <Target Name="Exercicio3:Clean">
-        <MSBuild Projects="..\Exercicio3\Exercicio3.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="Exercicio3:Make">
-        <MSBuild Projects="..\Exercicio3\Exercicio3.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="Exercicio2">
-        <MSBuild Projects="..\Exercicio2\Exercicio2.dproj"/>
-    </Target>
-    <Target Name="Exercicio2:Clean">
-        <MSBuild Projects="..\Exercicio2\Exercicio2.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="Exercicio2:Make">
-        <MSBuild Projects="..\Exercicio2\Exercicio2.dproj" Targets="Make"/>
-    </Target>
-    <Target Name="Exercicio1">
-        <MSBuild Projects="..\Exercicio1\Exercicio1.dproj"/>
-    </Target>
-    <Target Name="Exercicio1:Clean">
-        <MSBuild Projects="..\Exercicio1\Exercicio1.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="Exercicio1:Make">
-        <MSBuild Projects="..\Exercicio1\Exercicio1.dproj" Targets="Make"/>
-    </Target>
     <Target Name="exercicio5">
         <MSBuild Projects="..\exercicio5\exercicio5.dproj"/>
     </Target>
@@ -119,14 +98,59 @@
     <Target Name="exercicio10:Make">
         <MSBuild Projects="..\exercicio10\exercicio10.dproj" Targets="Make"/>
     </Target>
+    <Target Name="exercicio11">
+        <MSBuild Projects="..\exercicio11\exercicio11.dproj"/>
+    </Target>
+    <Target Name="exercicio11:Clean">
+        <MSBuild Projects="..\exercicio11\exercicio11.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="exercicio11:Make">
+        <MSBuild Projects="..\exercicio11\exercicio11.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="exercicio3">
+        <MSBuild Projects="exercicio3.dproj"/>
+    </Target>
+    <Target Name="exercicio3:Clean">
+        <MSBuild Projects="exercicio3.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="exercicio3:Make">
+        <MSBuild Projects="exercicio3.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="exercicio12">
+        <MSBuild Projects="..\exercicio12\exercicio12.dproj"/>
+    </Target>
+    <Target Name="exercicio12:Clean">
+        <MSBuild Projects="..\exercicio12\exercicio12.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="exercicio12:Make">
+        <MSBuild Projects="..\exercicio12\exercicio12.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="exercicio13">
+        <MSBuild Projects="..\exercicio13\exercicio13.dproj"/>
+    </Target>
+    <Target Name="exercicio13:Clean">
+        <MSBuild Projects="..\exercicio13\exercicio13.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="exercicio13:Make">
+        <MSBuild Projects="..\exercicio13\exercicio13.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="exercicio14">
+        <MSBuild Projects="..\exercicios14\exercicio14.dproj"/>
+    </Target>
+    <Target Name="exercicio14:Clean">
+        <MSBuild Projects="..\exercicios14\exercicio14.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="exercicio14:Make">
+        <MSBuild Projects="..\exercicios14\exercicio14.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="Exercicio3;Exercicio2;Exercicio1;exercicio5;exercicio6;exercicio7;exercicio8;exercicio9;exercicio10"/>
+        <CallTarget Targets="exercicio5;exercicio6;exercicio7;exercicio8;exercicio9;exercicio10;exercicio11;exercicio3;exercicio12;exercicio13;exercicio14"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="Exercicio3:Clean;Exercicio2:Clean;Exercicio1:Clean;exercicio5:Clean;exercicio6:Clean;exercicio7:Clean;exercicio8:Clean;exercicio9:Clean;exercicio10:Clean"/>
+        <CallTarget Targets="exercicio5:Clean;exercicio6:Clean;exercicio7:Clean;exercicio8:Clean;exercicio9:Clean;exercicio10:Clean;exercicio11:Clean;exercicio3:Clean;exercicio12:Clean;exercicio13:Clean;exercicio14:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="Exercicio3:Make;Exercicio2:Make;Exercicio1:Make;exercicio5:Make;exercicio6:Make;exercicio7:Make;exercicio8:Make;exercicio9:Make;exercicio10:Make"/>
+        <CallTarget Targets="exercicio5:Make;exercicio6:Make;exercicio7:Make;exercicio8:Make;exercicio9:Make;exercicio10:Make;exercicio11:Make;exercicio3:Make;exercicio12:Make;exercicio13:Make;exercicio14:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
