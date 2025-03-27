@@ -25,7 +25,6 @@ begin
     ReadLn;
   end;
 
-
   if precoCusto > precoVenda then
   WriteLn('Prejuízo')
   else if precoCusto < precoVenda then
@@ -33,6 +32,5 @@ begin
   else
   WriteLn('Empate');
   Readln;
-
 
   end.
