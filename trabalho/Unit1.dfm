@@ -11,6 +11,7 @@
   Font.Height = -16
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnCreate = FormCreate
   TextHeight = 21
   object Label1: TLabel
     Left = 93
@@ -238,59 +239,5 @@
     EditLabel.Caption = 'Repita a senha:'
     TabOrder = 8
     Text = ''
-  end
-  object StaticText1: TStaticText
-    Left = 93
-    Top = 329
-    Width = 50
-    Height = 25
-    Caption = 'Nome:'
-    TabOrder = 10
-  end
-  object StaticText2: TStaticText
-    Left = 233
-    Top = 329
-    Width = 45
-    Height = 25
-    Caption = 'Email:'
-    TabOrder = 11
-  end
-  object StaticText3: TStaticText
-    Left = 360
-    Top = 329
-    Width = 114
-    Height = 19
-    Caption = 'Data de Nascimento:'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -12
-    Font.Name = 'Segoe UI'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 12
-  end
-  object StaticText4: TStaticText
-    Left = 512
-    Top = 329
-    Width = 66
-    Height = 25
-    Caption = 'Telefone:'
-    TabOrder = 13
-  end
-  object StaticText5: TStaticText
-    Left = 632
-    Top = 329
-    Width = 50
-    Height = 25
-    Caption = 'Senha:'
-    TabOrder = 14
-  end
-  object StaticText6: TStaticText
-    Left = 776
-    Top = 329
-    Width = 61
-    Height = 25
-    Caption = 'Usu'#225'rio:'
-    TabOrder = 15
   end
 end

@@ -26,12 +26,6 @@ type
     edtSenha: TLabeledEdit;
     edtRepetirSenha: TLabeledEdit;
     tabela: TStringGrid;
-    StaticText1: TStaticText;
-    StaticText2: TStaticText;
-    StaticText3: TStaticText;
-    StaticText4: TStaticText;
-    StaticText5: TStaticText;
-    StaticText6: TStaticText;
     procedure FormCreate(Sender: TObject);
     procedure btnInserirClick(Sender: TObject);
   private
@@ -53,7 +47,7 @@ begin
 
 
   tabela.ColCount := 6;
-  tabela.RowCount := 1;
+  tabela.RowCount := 2;
   tabela.FixedRows := 1;
   tabela.Options := tabela.Options + [goColSizing, goRowSelect, goVertLine, goHorzLine];
   tabela.DefaultColWidth := 120;
