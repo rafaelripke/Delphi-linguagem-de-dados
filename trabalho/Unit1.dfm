@@ -226,6 +226,7 @@
     EditLabel.Width = 46
     EditLabel.Height = 21
     EditLabel.Caption = 'Senha:'
+    PasswordChar = '*'
     TabOrder = 7
     Text = ''
   end
@@ -237,6 +238,7 @@
     EditLabel.Width = 104
     EditLabel.Height = 21
     EditLabel.Caption = 'Repita a senha:'
+    PasswordChar = '*'
     TabOrder = 8
     Text = ''
   end
