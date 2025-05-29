@@ -1,7 +1,7 @@
 object MainForm1: TMainForm1
   Left = 0
   Top = 0
-  Caption = 'Trivia'
+  Caption = 'ANAGRAMA'
   ClientHeight = 693
   ClientWidth = 960
   Color = clBtnFace
@@ -23,18 +23,92 @@ object MainForm1: TMainForm1
     ExplicitWidth = 958
     object Contador: TLabel
       AlignWithMargins = True
-      Left = 300
-      Top = 85
-      Width = 360
+      Left = 308
+      Top = 0
+      Width = 50
       Height = 15
       Margins.Left = 300
       Margins.Top = 20
       Margins.Right = 300
       Margins.Bottom = 0
-      Align = alTop
       Alignment = taCenter
       Caption = 'Contador'
-      ExplicitWidth = 50
+    end
+    object btnT: TLabel
+      AlignWithMargins = True
+      Left = 328
+      Top = 68
+      Width = 14
+      Height = 37
+      Alignment = taCenter
+      Caption = 'T'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -27
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      OnClick = LetraClick
+    end
+    object btnR: TLabel
+      Left = 400
+      Top = 68
+      Width = 16
+      Height = 37
+      Alignment = taCenter
+      Caption = 'R'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -27
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      OnClick = LetraClick
+    end
+    object btnO: TLabel
+      Left = 456
+      Top = 68
+      Width = 20
+      Height = 37
+      Alignment = taCenter
+      Caption = 'O'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -27
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      OnClick = LetraClick
+    end
+    object btnP: TLabel
+      Left = 512
+      Top = 68
+      Width = 15
+      Height = 37
+      Alignment = taCenter
+      Caption = 'P'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -27
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      OnClick = LetraClick
+    end
+    object btnA: TLabel
+      Left = 568
+      Top = 68
+      Width = 17
+      Height = 37
+      Alignment = taCenter
+      Caption = 'A'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -27
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      OnClick = LetraClick
     end
     object Pesquisa: TEdit
       AlignWithMargins = True
@@ -55,9 +129,36 @@ object MainForm1: TMainForm1
       Font.Style = []
       ParentFont = False
       TabOrder = 0
-      TextHint = 'digite um texto para pesquisar'
       OnKeyDown = PesquisaKeyDown
       ExplicitWidth = 758
+    end
+    object btnEmbaralhar: TButton
+      Left = 760
+      Top = 99
+      Width = 100
+      Height = 25
+      Caption = 'Embaralhar'
+      TabOrder = 1
+      OnClick = btnEmbaralharClick
+    end
+    object btnLimpar: TButton
+      AlignWithMargins = True
+      Left = 760
+      Top = 68
+      Width = 100
+      Height = 25
+      Caption = 'Limpar'
+      TabOrder = 2
+      OnClick = btnLimparClick
+    end
+    object btnVerificar: TButton
+      Left = 100
+      Top = 83
+      Width = 99
+      Height = 25
+      Caption = 'Verificar'
+      TabOrder = 3
+      OnClick = btnVerificarClick
     end
   end
   object PainelGlobal: TPanel
